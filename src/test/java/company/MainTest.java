@@ -42,7 +42,7 @@ public class MainTest
         input Input = new input(OutputResult);
 
         /* PREPARE SIMULATED CLI INPUT */
-        in = new ByteArrayInputStream("run".getBytes()); // Use "run" as Simulated Input
+        in = new ByteArrayInputStream(("run"+System.lineSeparator()).getBytes()); // Use "run" as Simulated Input
         // Reset System.in to its original
         System.setIn(in);
 
