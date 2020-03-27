@@ -48,7 +48,7 @@ public class MainTest
 
         // read input and perform [Circular Shifting + Alphabetizing]
         Input.FileReader("TIC3001-Assignment1-testcases/testcase1/TitlesInput1.txt");
-        
+        System.setIn(sysInBackup);
 
 
         // Read Correct Expected Output into test
@@ -56,7 +56,7 @@ public class MainTest
 
         // assert output generated with Answer
         assertEquals(OutputResult, CorrectOutput);
-        System.setIn(sysInBackup);
+        
     }
 
     @Test
