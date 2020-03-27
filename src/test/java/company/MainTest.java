@@ -44,10 +44,11 @@ public class MainTest
         /* PREPARE SIMULATED CLI INPUT */
         in = new ByteArrayInputStream(("run"+System.lineSeparator()).getBytes()); // Use "run" as Simulated Input
         // Reset System.in to its original
-        System.setIn(in);
+        
 
         // read input and perform [Circular Shifting + Alphabetizing]
         Input.FileReader("TIC3001-Assignment1-testcases/testcase1/TitlesInput1.txt");
+        System.setIn(in);
 
 
         // Read Correct Expected Output into test
