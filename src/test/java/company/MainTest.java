@@ -56,7 +56,7 @@ public class MainTest
 
         // assert output generated with Answer
         assertEquals(OutputResult, CorrectOutput);
-        System.setIn(System.in)
+        System.setIn(System.in);
     }
 
     @Test
